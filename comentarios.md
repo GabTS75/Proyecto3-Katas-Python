@@ -12,13 +12,13 @@
 
 ### Paso 2: Desarrollo de los ejercicios
 
-- **Ejercicios 01 al 10:** - Ejemplo: Sintaxis básica, entrada/salida de datos y estructuras condicionales (if/else).
+- **Ejercicios A al B:** - POR DEFINIR [Ejemplo: Sintaxis básica, entrada/salida de datos y estructuras condicionales (if/else).]
 
-- **Ejercicios 11 al 20:** - Ejemplo: Bucles (for/while) y manipulación de cadenas.
+- **Ejercicios C al D:** - POR DEFINIR [Ejemplo: Bucles (for/while) y manipulación de cadenas.]
 
-- **Ejercicios 21 al 30:** - Ejemplo: Estructuras de datos (listas, tuplas y diccionarios).
+- **Ejercicios E al F:** - POR DEFINIR [Ejemplo: Estructuras de datos (listas, tuplas y diccionarios).]
 
-- **Ejercicios 31 al 40:** - Ejemplo: Funciones, gestión de errores y modularidad.
+- **Ejercicios G al H:** - POR DEFINIR [Ejemplo: Funciones, gestión de errores y modularidad.]
 
 ### Dificultades encontradas y soluciones
 
@@ -38,7 +38,7 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 - **Dificultad:** Al principio pensé en usar `if/else` con `continue` para saltar los espacios al contar letras.
 - **Solución:** Simplifiqué invirtiendo la condición ( if letra != " ": ), evitando el `continue` y quedando el código más compacto.
 
-- **Dificultad:** Python distingue mayúsculas de minúsculas ("H" ≠ "h"), lo que duplicaría letras iguales en el conteo si no se controla.
+- **Dificultad:** Python distingue mayúsculas de minúsculas ("P" ≠ "p"), lo que duplicaría letras iguales en el conteo si no se controla.
 - **Solución:** Por lo tanto, normalizo la cadena completa a minúsculas con `.lower()` antes de empezar a contar.
 
 ---
