@@ -76,12 +76,14 @@ def main():
             print(
                 f'Opción no válida. Escribe un número entre 1 y {TOTAL_EJERCICIOS}, o "S" para salir.'
             )
+            input("\nPulsa Enter para continuar...")
             continue
 
         numero = int(eleccion)
 
         if not ejercicio_existe(numero):
             print(f"El ejercicio {numero} todavía no está creado.")
+            input("\nPulsa Enter para continuar...")
             continue
 
         limpiar_pantalla()  # pantalla limpia antes de mostrar el resultado
