@@ -12,7 +12,12 @@
 
 ### Paso 2: Desarrollo de los ejercicios
 
-- **Ejercicios A al B:** - POR DEFINIR [Ejemplo: Sintaxis básica, entrada/salida de datos y estructuras condicionales (if/else).]
+**Bloque 1 (Ejercicios 01-16):** *fundamentos sin dependencias externas*
+
+- Tipos de datos (diccionarios, tuplas, conjuntos)
+- Funciones lambda combinadas con map()/filter()
+- Manejo de excepciones (incorporadas y personalizadas) y recursividad.
+Todo usando solo funciones incorporadas de Python, sin necesidad de ningún import.
 
 - **Ejercicios C al D:** - POR DEFINIR [Ejemplo: Bucles (for/while) y manipulación de cadenas.]
 
@@ -29,7 +34,7 @@
 `main.py`: Este viene a ser el **panel de control** que permite lanzar cualquiera de los ejercicios desde un único punto de entrada, siendo el rango de ejercicios (desde el 1 hasta el 40), si no está creado avisará en lugar de fallar.
 
 - **Dificultad:** Mi propuesta me ocasionó un aprendizaje interezante, puesto que al ejecutar los ejercicios desde `main.py` mediante un `import` normal (`importlib.import_module`), el bloque de prueba `if __name__ == "__main__":` de cada ejercicio no se ejecutaba, debido a que al importar un módulo su `__name__` pasa a ser la ruta del paquete (por ejemplo: "python-files.ejercicio_01"), no `__main__`.
-- **Solución:** Se reemplazó por `runpy.run_module(ruta, run_name="__main__")`, que fuerza que `__name__` valga `__main__` al ejecutar el módulo elegido, disparando correctamente la demostración.
+- **Solución:** Reemplazé por `runpy.run_module(ruta, run_name="__main__")`, que fuerza que `__name__` valga `__main__` al ejecutar el módulo elegido, disparando correctamente la demostración.
 
 #### Ejercicio 01
 
@@ -46,7 +51,7 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 #### Limpiar pantalla
 
 - **Dificultad:** Al ejecutar un ejercicio desde `main.py`, la salida aparecía debajo del panel anterior sin limpiar la pantalla, generando texto acumulado y desordenado.
-- **Solución:** Se añadió `limpiar_pantalla()` (usa `cls` en Windows y `clear` en Linux/Mac según `os.name`), llamada antes de mostrar el panel y antes de ejecutar cada ejercicio.
+- **Solución:** Se añade `limpiar_pantalla()` (usa `cls` en Windows y `clear` en Linux/Mac según `os.name`), llamada antes de mostrar el panel y antes de ejecutar cada ejercicio.
 
 ---
 
@@ -54,14 +59,14 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 - **Dificultad:** Los mensajes de "ejercicio todavía no creado" y "opción no válida" en `main.py` aparecían y desaparecían casi instantáneamente ("parpadeo"), porque la siguiente vuelta del bucle limpiaba la pantalla antes de que se pudieran leer.
 
-- **Solución:** Se añadió `input("Pulsa Enter para continuar...")` justo después de esos dos mensajes, igual que ya existía tras ejecutar un ejercicio, para pausar hasta que el usuario decida continuar.
+- **Solución:** Se añade `input("Pulsa Enter para continuar...")` justo después de esos dos mensajes, igual que ya existía tras ejecutar un ejercicio, para pausar hasta que el usuario decida continuar.
 
 ---
 
 #### Ejercicio 6
 
 - **Dificultad:** Encuentro la necesidad de utilizar el "caso base", de lo contrario, el factorial pediría `n-1` indefinidadmente en la formula `n! = n * factorial(n-1)`, provocando error.
-- **Solución:** Se calcula el factorial de forma recursiva con caso base `0! = 1` (ejemplo visual al final del propio script).
+- **Solución:** Calculo el factorial de forma recursiva con caso base `0! = 1` (ejemplo visual al final del propio script).
 
 ---
 
@@ -86,10 +91,28 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 ---
 
-#### Ejercico 15
+#### Ejercicio 15
 
 - **Dificultad:** Para este ejercicio, intenté definir una función que hacía `return lambda lista_num: [...]`, devolviendo el lambda como objeto sin ejecutarlo nunca.
-- **Solución:** Separo el lambda (que opera sobre un solo número) del uso de `map()` (que lo aplica a toda la lista). Si está dentro de una función `def`, lo devuelve sin usarlo.
+- **Solución:** Separo el lambda (que opera sobre un solo número) del uso de `map()` (que lo aplica a toda la lista). Si lo dejo dentro de la función `def`, lo devuelve sin usarlo.
+
+---
+
+#### Ejercicio 18
+
+- **Dificultad:** Al principio intenté escribir las claves del diccionario sin comillas (`{nombre: "Jose", ...}`) y accedí a un valor con paréntesis (`estudiante(calificacion)`), como si fuera una llamada a función. Sí, muy mal.
+- **Solución:** Corregí el error, puesto que las claves de un diccionario son strings y deben ir entre comillas (`{"nombre": "Jose", ...}`), y para leer un valor por su clave se usan corchetes, no paréntesis (`estudiante["calificacion"]`). Ahora sí.
+
+---
+
+#### Ejercicio 20
+
+- **Dificultad:** Por desconocimiento inicial, creía que era un **método** cuando es **una función independiente**, escribí `elemento.isinstance(elemento, int)`, con el punto, dando el error `AttributeError: 'str' object has no attribute 'isinstance'`.
+- **Solución:** Al saber que `isinstance(valor, tipo)` es una función independiente de Python (como len() o str()), entonces cambio `elemento.isinstance(elemento, int)` por `isinstance(elemento, int)`, pasando el valor como argumento.
+
+---
+
+#### Ejercicio
 
 ---
 
@@ -101,6 +124,6 @@ etc. ...
 
 - **Nombre:** José Gabriel Ternero Sifuentes
 
-- **Curso:** 2º ASIR — **PROMETEO FP** by _The Power_
+- **Curso:** 2º ASIR — **PROMETEO FP** by *The Power*
 
 - **GitHub:** [GabTS75](https://github.com/GabTS75)
