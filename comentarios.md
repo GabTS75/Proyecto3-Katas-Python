@@ -58,6 +58,41 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 ---
 
+#### Ejercicio 6
+
+- **Dificultad:** Encuentro la necesidad de utilizar el "caso base", de lo contrario, el factorial pediría `n-1` indefinidadmente en la formula `n! = n * factorial(n-1)`, provocando error.
+- **Solución:** Se calcula el factorial de forma recursiva con caso base `0! = 1` (ejemplo visual al final del propio script).
+
+---
+
+#### Ejercicio 11
+
+- **Dificultad:** Para calcular el rango utilizo: `edad > 0 or edad < 120`, pero encuentro un error de lógica en esta condición (ver ejemplo visual al final del script).
+- **Solución:** Cambio por un rango válido: `0<= edad <= 120`, que resuelve bien si se ingresa una edad "negativa", porque `or` entre dos condiciones tan amplias termina siendo casi siempre `True` para cualquier número.
+
+---
+
+#### Ejercicio 12
+
+- **Dificultad:** En principio utilicé **lambda**, aunque investigando un poco, encontré una mejora en `map()`.
+- **Solución:** Aplico `len()` dentro del `map()`, ejemplo: `map(len, lista_palabras)`, puesto que `len()` también es una función lista para usar directamente con `map()` como `str()`, tal y como se ve en el ejercicio 7 pasado, **sin lambda**.
+
+---
+
+#### Ejercicio 14
+
+- **Dificultad:** Para este ejercicio pensé primero en la indexación `palabra[0] == letra` (por la posición), pero resulta que Python tiene un método hecho justo para esto, más legible y seguro.
+- **Solución:** Investigando, encontré el método `.startswith()` de los strings, que devuelve True/False según si el texto empieza por el prefijo indicado (más seguro que comparar `palabra[0]`, que fallaría con una palabra vacía).
+
+---
+
+#### Ejercico 15
+
+- **Dificultad:** Para este ejercicio, intenté definir una función que hacía `return lambda lista_num: [...]`, devolviendo el lambda como objeto sin ejecutarlo nunca.
+- **Solución:** Separo el lambda (que opera sobre un solo número) del uso de `map()` (que lo aplica a toda la lista). Si está dentro de una función `def`, lo devuelve sin usarlo.
+
+---
+
 etc. ...
 
 ---
