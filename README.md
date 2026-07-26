@@ -33,13 +33,13 @@ Tu repositorio tiene que constar, al menos, de los siguientes archivos/carpetas:
 
 ---
 
-### Desarrollo: Estructura propuesta para la entrega
+### PROPUESTA DE DESARROLLO: Estructura para la entrega
 
 Repositorio preparado para la entrega del **Proyecto 3: Katas Python** del Máster, _by Antonio Rosales_.
 
-Este proyecto recopila la resolución de **40 ejercicios de programación en Python**, abarcando desde conceptos fundamentales (variables, condicionales y bucles) hasta estructuras de datos, funciones y modularización.
+Este proyecto recopila la resolución de **40 ejercicios de programación en Python**, abarcando desde conceptos fundamentales, hasta estructuras de datos, funciones y modularización.
 
-He decidido incluir para el proyecto, un archivo `main.py` que es el **ejecutable principal**, este permite elegir y ejecutar cada ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
+Decidí incluir para el proyecto, un archivo `main.py` que hace de **ejecutable principal**, este permite elegir y ejecutar cada ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
 
 ```bash
 📂 Proyecto3-Katas-Python   # nombre del repositorio principal
@@ -55,7 +55,7 @@ He decidido incluir para el proyecto, un archivo `main.py` que es el **ejecutabl
 └── README.md               # Indicaciones del proyecto (este mismo)
 ```
 
-### Pasos para la ejecución correcta
+### Pasos previos para la ejecución correcta
 
 #### En Windows 🪟
 
@@ -64,7 +64,8 @@ He decidido incluir para el proyecto, un archivo `main.py` que es el **ejecutabl
 python --version
 
 # Si no lo tenemos, instalamos Python 3 siguiendo los pasos:
-# Abre el navegador y descarga el ejecutable desde python.org, luego ejecuta el instalador y asegurate de marcar "Add Python to PATH" antes de instalar.
+# Abre el navegador y descarga el ejecutable desde python.org, luego ejecuta
+# el instalador y asegurate de marcar "Add Python to PATH" antes de instalar.
 
 # Ejecutar el script desde el terminal.
 python main.py
@@ -84,6 +85,8 @@ python --version
 # Ejecutar el script en el terminal
 python3 main.py
 ```
+
+> **NOTA:** También es posible ejecutarlo en el mismo **Visual Studio Code**, abriendo una terminal (**CTRL + ñ**) en la carpeta principal del repositorio y ejecutar `python main.py` o `python3 main.py` tal y como se indicó anteriormente.
 
 ### Entorno de Desarrollo
 
