@@ -112,7 +112,10 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 ---
 
-#### Ejercicio
+#### Ejercicio 28
+
+- **Dificultad:** Al principio intento plantear `set(elementos)` sobre toda la lista para buscar el duplicado, pero recuerdo que `set()` elimina el orden y no distingue "cuál se repitió primero", es decir, solo da los valores únicos, sin información sobre repetición ni posición.
+- **Solución:** Usé un `set()` vacío como "memoria de vistos", recorrido con un for en orden, osea, para cada elemento se comprueba si ya está en "vistos" (duplicado encontrado) o lo añade por primera vez.
 
 ---
 
