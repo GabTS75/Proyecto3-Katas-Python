@@ -35,11 +35,11 @@ Tu repositorio tiene que constar, al menos, de los siguientes archivos/carpetas:
 
 ### PROPUESTA DE DESARROLLO: Estructura para la entrega
 
-Repositorio preparado para la entrega del **Proyecto 3: Katas Python** del Máster, _by Antonio Rosales_.
+Repositorio preparado y listo para la entrega del **Proyecto 3: Katas Python** del Máster, _by Antonio Rosales_.
 
-Este proyecto recopila la resolución de **40 ejercicios de programación en Python**, abarcando desde conceptos fundamentales, hasta estructuras de datos, funciones y modularización.
+En este proyecto se encontrará la resolución de **40 ejercicios de programación en Python**, abarcando desde conceptos fundamentales, hasta estructuras de datos, funciones y modularización.
 
-Decidí incluir para el proyecto, un archivo `main.py` que hace de **ejecutable principal**, este permite elegir y ejecutar cada ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
+Además, decidí incluir para el proyecto, un archivo `main.py` que hace de **ejecutable principal**, el cual permite elegir y ejecutar cada ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
 
 ```bash
 📂 Proyecto3-Katas-Python   # nombre del repositorio principal
