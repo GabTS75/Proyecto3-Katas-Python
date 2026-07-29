@@ -119,6 +119,13 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 ---
 
+#### Ejercicio 31
+
+- **Dificultad:** En este ejercicio no me quedaba claro cómo pedir al usuario varios nombres, es decir, la lista completa usando `input()`, ya que hasta ahora solo se había pedido un valor por línea, honestamente estuve muy liado.
+- **Solución:** En mi busqueda, encuentro que la mejor forma es pedir toda la lista es **en una sola línea y separada por comas**, luego se separa con `.split(",")`; además aplico `.strip()` a cada nombre para quitar los espacios sobrantes que quedan tras la coma (aprendí que sin esto, "Ana, Luis" generaría " Luis" con un espacio al inicio, y una búsqueda de "Luis" fallaría aunque esté en la lista).
+
+---
+
 etc. ...
 
 ---
