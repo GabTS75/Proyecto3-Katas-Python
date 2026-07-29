@@ -51,7 +51,7 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 #### Limpiar pantalla
 
 - **Dificultad:** Al ejecutar un ejercicio desde `main.py`, la salida aparecía debajo del panel anterior sin limpiar la pantalla, generando texto acumulado y desordenado.
-- **Solución:** Se añade `limpiar_pantalla()` (usa `cls` en Windows y `clear` en Linux/Mac según `os.name`), llamada antes de mostrar el panel y antes de ejecutar cada ejercicio.
+- **Solución:** Añado `limpiar_pantalla()` (usa `cls` en Windows y `clear` en Linux/Mac según `os.name`), que es llamada antes de mostrar el panel y antes de ejecutar cada ejercicio.
 
 ---
 
@@ -59,7 +59,7 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 - **Dificultad:** Los mensajes de "ejercicio todavía no creado" y "opción no válida" en `main.py` aparecían y desaparecían casi instantáneamente ("parpadeo"), porque la siguiente vuelta del bucle limpiaba la pantalla antes de que se pudieran leer.
 
-- **Solución:** Se añade `input("Pulsa Enter para continuar...")` justo después de esos dos mensajes, igual que ya existía tras ejecutar un ejercicio, para pausar hasta que el usuario decida continuar.
+- **Solución:** Añadí `input("Pulsa Enter para continuar...")` justo después de esos dos mensajes, igual que ya existía tras ejecutar un ejercicio, para pausar hasta que el usuario decida continuar.
 
 ---
 
@@ -108,14 +108,14 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 #### Ejercicio 20
 
 - **Dificultad:** Por desconocimiento inicial, creía que era un **método** cuando es **una función independiente**, escribí `elemento.isinstance(elemento, int)`, con el punto, dando el error `AttributeError: 'str' object has no attribute 'isinstance'`.
-- **Solución:** Al saber que `isinstance(valor, tipo)` es una función independiente de Python (como len() o str()), entonces cambio `elemento.isinstance(elemento, int)` por `isinstance(elemento, int)`, pasando el valor como argumento.
+- **Solución:** Al saber que `isinstance(valor, tipo)` es una función independiente de Python (como `len()` o `str()`), entonces cambio `elemento.isinstance(elemento, int)` por `isinstance(elemento, int)`, pasando el valor como argumento.
 
 ---
 
 #### Ejercicio 28
 
 - **Dificultad:** Al principio intento plantear `set(elementos)` sobre toda la lista para buscar el duplicado, pero recuerdo que `set()` elimina el orden y no distingue "cuál se repitió primero", es decir, solo da los valores únicos, sin información sobre repetición ni posición.
-- **Solución:** Usé un `set()` vacío como "memoria de vistos", recorrido con un for en orden, osea, para cada elemento se comprueba si ya está en "vistos" (duplicado encontrado) o lo añade por primera vez.
+- **Solución:** Usé un `set()` vacío como "memoria de vistos", recorrido con un `for` en orden, osea, para cada elemento se comprueba si ya está en "vistos" (duplicado encontrado) o lo añade por primera vez.
 
 ---
 
@@ -127,6 +127,8 @@ etc. ...
 
 - **Nombre:** José Gabriel Ternero Sifuentes
 
-- **Curso:** 2º ASIR — **PROMETEO FP** by *The Power*
+- **Curso:** 2º ASIR — **PROMETEO FP** *by The Power*
+
+- **Máster:** Ciberseguridad — **Prometeo Cyber** *by Antonio Rosales*
 
 - **GitHub:** [GabTS75](https://github.com/GabTS75)
