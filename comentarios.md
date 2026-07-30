@@ -15,15 +15,19 @@
 **Bloque 1 (Ejercicios 01-16):** *fundamentos sin dependencias externas*
 
 - Tipos de datos (diccionarios, tuplas, conjuntos)
-- Funciones lambda combinadas con map()/filter()
+- Funciones lambda combinadas con `map()`/`filter()`
 - Manejo de excepciones (incorporadas y personalizadas) y recursividad.
-Todo usando solo funciones incorporadas de Python, sin necesidad de ningún import.
+- Todo usando solo funciones incorporadas de Python, sin necesidad de ningún import.
 
-- **Ejercicios C al D:** - POR DEFINIR [Ejemplo: Bucles (for/while) y manipulación de cadenas.]
+**Bloque 2 (Ejercicios 17-33):** *módulos externos y estructuras avanzadas*
 
-- **Ejercicios E al F:** - POR DEFINIR [Ejemplo: Estructuras de datos (listas, tuplas y diccionarios).]
+- Uso de `functools reduce()`, primer módulo que requiere `import`.
+- Uso de `isinstance()`, slicing con índices negativos, `sorted()` para comparar contenido.
+- Listas de diccionarios y excepciones personalizadas algo más elaboradas.
 
-- **Ejercicios G al H:** - POR DEFINIR [Ejemplo: Funciones, gestión de errores y modularidad.]
+**Bloque 3 (Ejercicios 34-40):** *temas tratados*
+
+- abc
 
 ### Dificultades encontradas y soluciones
 
@@ -123,6 +127,13 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 - **Dificultad:** En este ejercicio no me quedaba claro cómo pedir al usuario varios nombres, es decir, la lista completa usando `input()`, ya que hasta ahora solo se había pedido un valor por línea, honestamente estuve muy liado.
 - **Solución:** En mi busqueda, encuentro que la mejor forma es pedir toda la lista es **en una sola línea y separada por comas**, luego se separa con `.split(",")`; además aplico `.strip()` a cada nombre para quitar los espacios sobrantes que quedan tras la coma (aprendí que sin esto, "Ana, Luis" generaría " Luis" con un espacio al inicio, y una búsqueda de "Luis" fallaría aunque esté en la lista).
+
+---
+
+#### Ejercicio 34
+
+- **Dificultad:** Al empezar el ejercicio 34 (primera clase del proyecto), tuve una tremenda confusión sobre lo qué es una clase y para qué sirve, incluso creía que hablábamos de un árbol de directorios (carpetas). También me surgió la duda de cómo modificar cada elemento de una lista (no solo leerlo) dentro de un método, vaya!.
+- **Solución:** Luego de profundizar en el tema, aclaro el concepto de clase (en resumen la clase define la plantilla; cada objeto tiene sus propios datos). Luego, para modificar elementos de una lista aplico un `for` por índice (`for i in range(len(lista)): y lista[i] += 1`), en vez de for elemento in lista:, que solo daría copias temporales de lectura.
 
 ---
 
