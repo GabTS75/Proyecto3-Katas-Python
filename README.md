@@ -86,7 +86,17 @@ python --version
 python3 main.py
 ```
 
-> **NOTA:** También es posible ejecutarlo en el mismo **Visual Studio Code**, abriendo una terminal (**CTRL + ñ**) en la carpeta principal del repositorio y ejecutar `python main.py` o `python3 main.py` tal y como se indicó anteriormente.
+---
+
+> **NOTA:** También es posible ejecutarlo en el mismo **Visual Studio Code**, abriendo un terminal (**CTRL + ñ**) en la carpeta principal del repositorio y ejecutar `python main.py` o `python3 main.py` tal y como se muestra en la siguiente imagen. 👇
+
+![VSCode_img1.jpg](./python-files/imgs/img1.jpg)
+
+> Debería mostrarse así:
+
+![VSCode_img2.jpg](./python-files/imgs/img2.jpg)
+
+---
 
 ### Entorno de Desarrollo
 
