@@ -35,11 +35,11 @@ Tu repositorio tiene que constar, al menos, de los siguientes archivos/carpetas:
 
 ### PROPUESTA DE DESARROLLO: Estructura para la entrega
 
-Repositorio preparado y listo para la entrega del **Proyecto 3: Katas Python** del Máster, _by Antonio Rosales_.
+Repositorio preparado y listo para la entrega del **Proyecto 3: Katas Python** del Máster _by Antonio Rosales_.
 
-En este proyecto se encontrará la resolución de **40 ejercicios de programación en Python**, abarcando desde conceptos fundamentales, hasta estructuras de datos, funciones y modularización.
+Proyecto con la resolución de **40 ejercicios de programación en Python**, abarcando progresivamente tipos de datos y estructuras, funciones `lambda`/`map`/`filter`/`reduce`, manejo de condicionales y excepciones (incorporadas y personalizadas), recursividad, clases, programación orientada a objetos (POO) y modularización — con un registro detallado del proceso y las dificultades encontradas en `comentarios.md`.
 
-Además, decidí incluir para el proyecto, un archivo `main.py` que hace de **ejecutable principal**, el cual permite elegir y ejecutar cada ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
+Además, incluí para el proyecto, un **panel de control** `main.py` para ejecutar cualquier ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
 
 ```bash
 📂 Proyecto3-Katas-Python   # nombre del repositorio principal
@@ -57,32 +57,30 @@ Además, decidí incluir para el proyecto, un archivo `main.py` que hace de **ej
 
 ### Pasos previos para la ejecución correcta
 
-#### En Windows 🪟
+En la carpeta principal del proyecto `Proyecto3-Katas-Python`, abre el terminal de tu Sistema Operativo (Windows o Linux) y desde allí sigue las siguientes indicaciones:
 
 ```bash
-# Escribiremos en el CMD (terminal)
+# En Windows, escribimos en el CMD (terminal) lo siguiente:
 python --version
 
 # Si no lo tenemos, instalamos Python 3 siguiendo los pasos:
 # Abre el navegador y descarga el ejecutable desde python.org, luego ejecuta
 # el instalador y asegurate de marcar "Add Python to PATH" antes de instalar.
 
-# Ejecutar el script desde el terminal.
+# Para ejecutar el script escribiremos:
 python main.py
 
 # También se puede ejecutar individualmente (opcional)
 python python-files/ejercicio_01.py
 ```
 
-#### En Linux 🐧
-
 ```bash
-# Abrimos el Terminal (Ctrl + Alt + T) en tu Linux y escribimos:
+# En Linux, abrimos el terminal (Ctrl + Alt + T) y escribimos:
 python --version
 
 # Por lo general viene siempre pre-instalado Python en Linux
 
-# Ejecutar el script en el terminal
+# Para ejecutar el script, escribimos:
 python3 main.py
 ```
 
