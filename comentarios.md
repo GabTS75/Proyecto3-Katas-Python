@@ -79,7 +79,7 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 #### Ejercicio 11
 
 - **Dificultad:** Para calcular el rango utilizo: `edad > 0 or edad < 120`, pero encuentro un error de lógica en esta condición (ver ejemplo visual al final del script).
-- **Solución:** Cambio por un rango válido: `0<= edad <= 120`, que resuelve bien si se ingresa una edad "negativa", porque `or` entre dos condiciones tan amplias termina siendo casi siempre `True` para cualquier número.
+- **Solución:** Cambio por un rango válido: `0 <= edad <= 120`, que resuelve bien si se ingresa una edad "negativa", porque `or` entre dos condiciones tan amplias termina siendo casi siempre `True` para cualquier número.
 
 ---
 
@@ -153,13 +153,13 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 ---
 
-## Autor 👨‍💻
+## Alumno 👨‍💻
 
-- **Nombre:** José Gabriel Ternero Sifuentes
+- **Nombre:** JOSÉ GABRIEL TERNERO SIFUENTES
 
 - **Curso:** 2º ASIR — **PROMETEO FP** *by The Power*
 
-- **Máster:** Ciberseguridad — **Prometeo Cyber** *by Antonio Rosales*
+- **Máster:** CIBERSEGURIDAD — **Prometeo Cyber** *by Antonio Rosales*
 
 - **GitHub:** [GabTS75](https://github.com/GabTS75)
 
