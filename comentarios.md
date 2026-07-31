@@ -47,7 +47,7 @@
 Función que cuenta la frecuencia de letras de una cadena usando un diccionario, sin distinguir mayúsculas/minúsculas y sin contar espacios (`str.lower()` + `dict.get()`).
 
 - **Dificultad:** Al principio pensé en usar `if/else` con `continue` para saltar los espacios al contar letras.
-- **Solución:** Simplifiqué invirtiendo la condición ( if letra != " ": ), evitando el `continue` y quedando el código más compacto.
+- **Solución:** Simplifiqué invirtiendo la condición (`if letra != " ":`), evitando el `continue` y quedando el código más compacto.
 
 - **Dificultad:** Python distingue mayúsculas de minúsculas ("P" ≠ "p"), lo que duplicaría letras iguales en el conteo si no se controla.
 - **Solución:** Por lo tanto, normalizo la cadena completa a minúsculas con `.lower()` antes de empezar a contar.
@@ -134,8 +134,8 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 #### Ejercicio 34
 
-- **Dificultad:** Al empezar el ejercicio 34 (primera clase del proyecto), tuve una tremenda confusión sobre lo qué es una clase y para qué sirve, incluso creía que hablábamos de un árbol de directorios (carpetas). También me surgió la duda de cómo modificar cada elemento de una lista (no solo leerlo) dentro de un método, vaya!.
-- **Solución:** Luego de profundizar en el tema, aclaro el concepto de clase (en resumen la clase define la plantilla; cada objeto tiene sus propios datos). Luego, para modificar elementos de una lista aplico un `for` por índice (`for i in range(len(lista)): y lista[i] += 1`), en vez de for elemento in lista:, que solo daría copias temporales de lectura.
+- **Dificultad:** Al empezar el ejercicio, tuve una tremenda confusión sobre qué es una clase y para qué sirve, incluso creía que hablábamos de un árbol de directorios (carpetas). También me surgió la duda de cómo modificar cada elemento de una lista (no solo leerlo) dentro de un método, vaya!.
+- **Solución:** Luego de profundizar en el tema, aclaro el concepto de clase (en resumen, la clase define la plantilla; cada objeto tiene sus propios datos). Luego, para modificar elementos de una lista aplico un `for` por índice (`for i in range(len(lista)):` y `lista[i] += 1`), en vez de `for elemento in lista:`, que solo daría copias temporales de lectura.
 
 ---
 
