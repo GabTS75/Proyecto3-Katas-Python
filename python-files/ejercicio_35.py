@@ -6,13 +6,13 @@
 #   corriente.
 # - Métodos: retirar_dinero, transferir_dinero, agregar_dinero.
 # - Código a seguir:
-#     1. Inicializar un usuario con nombre, saldo y un indicador (True o False) de
+#     a. Inicializar un usuario con nombre, saldo y un indicador (True o False) de
 #        cuenta corriente.
-#     2. Implementar retirar_dinero para sustraer dinero del saldo, lanzando un error
+#     b. Implementar retirar_dinero para sustraer dinero del saldo, lanzando un error
 #        si no es posible.
-#     3. Implementar transferir_dinero para transferir dinero desde otro usuario,
+#     c. Implementar transferir_dinero para transferir dinero desde otro usuario,
 #        lanzando un error en caso de fallo.
-#     4. Implementar agregar_dinero para aumentar el saldo del usuario.
+#     d. Implementar agregar_dinero para aumentar el saldo del usuario.
 # - Caso de uso:
 #     1. Crear dos usuarios: "Alicia" con saldo inicial de 100 y "Bob" con saldo
 #        inicial de 50, ambos con cuenta corriente.

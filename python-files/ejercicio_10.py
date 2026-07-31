@@ -8,12 +8,12 @@
 
 class ListaVaciaError(Exception):
     """
-    Excepción personalizada: se lanza cuando se intenta calcular el
+    Excepción personalizada: se lanzará cuando se intente calcular el
     promedio de una lista vacía. Hereda de Exception, la clase base
     de la que parten todas las excepciones en Python.
     """
 
-    pass
+    pass  # a la espera
 
 
 def calcular_promedio(numeros):

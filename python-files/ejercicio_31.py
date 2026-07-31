@@ -33,7 +33,7 @@ def buscar_nombre(lista_nombres, nombre_buscado):
 
 if __name__ == "__main__":
     lista_nombres = ["Ana", "Luis", "Carlos", "Victoria", "Antonio"]
-
+    print("--- Usando lista de prueba ---")
     print("Lista de nombres:", lista_nombres)
     print("Nombre buscado: Antonio")
     try:
@@ -48,8 +48,8 @@ if __name__ == "__main__":
     except NombreNoEncontradoError as error:
         print("Error:", error)
 
-    # Para usarlo de forma interactiva, descomenta estas líneas:
-    print("\n----- Usando input -----")
+    # Para usarlo de forma interactiva:
+    print("\n----- Usando input() -----")
     print("Recordar que Python distingue entre mayúsculas y minúsculas")
     texto = input("\nIntroduce los nombres separados por comas: ")
     lista_nombres = []

@@ -5,8 +5,6 @@
 # -------------------------------------------------------------------------------------------
 
 
-# El lambda (separado) comprueba si UN número es impar (True/False); luego
-# filter() lo aplica a toda la lista, quedándose solo con los que dan True
 es_impar = lambda n: n % 2 != 0
 
 
@@ -22,3 +20,8 @@ if __name__ == "__main__":
     lista_num = [12, 5, 8, 3, 24, 17, 20]
     print("Lista:", lista_num)
     print("Resultado (impares):", filtrar_impares(lista_num))
+
+# -------------------------------------------------------------------------------------------
+# EXTRA
+# El lambda (separado) comprueba si UN número es impar (True/False); luego
+# filter() lo aplica a toda la lista, quedándose solo con los que dan True

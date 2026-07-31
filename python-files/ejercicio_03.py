@@ -11,8 +11,7 @@ def filtrar_palabras(lista_palabras, objetivo):
     """
     Recibe una lista de palabras y una palabra objetivo, y devuelve una
     nueva lista con las palabras originales que contienen "objetivo" en
-    su interior. Uso .lower() sólo para la comparación, osea, la palabra
-    devuelta conserva su forma original (no se guardará).
+    su interior.
     """
     objetivo = objetivo.lower()  # normalizamos solo para la comparación
     resultado = []

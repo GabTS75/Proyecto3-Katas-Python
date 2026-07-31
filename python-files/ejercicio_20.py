@@ -18,6 +18,6 @@ def filtrar_int(elementos):
 if __name__ == "__main__":
     elementos = ["Hola", 24, "vamos", 15, "puedes", 0.33]
     # Mostrará [24, 15], porque 0.33 también se excluye, ya que es de tipo float,
-    # no int, aunque sea un número.
+    # no int, aunque sea un número. ¡ojo!
     print("Lista:", elementos)
     print("Resultado (valores int):", filtrar_int(elementos))

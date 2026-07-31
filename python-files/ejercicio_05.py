@@ -34,8 +34,8 @@ if __name__ == "__main__":
     print("Notas B: 1, 3, 5")
     print(evaluar_notas(notas_b))  # también con el umbral por defecto
 
-    # EJEMPLO ADICIONAL
+    # EJEMPLO ADICIONAL (si cambiamos el umbral)
     notas_c = [5, 6, 6]
     print("Notas C: 5, 6, 6 (nota_aprobatoria es 7 en este caso)")
     print(evaluar_notas(notas_c, nota_aprobado=7))
-    # Demostración de que el parámetro opcional importa, si cambiamos el umbral
+    # Demostración de que el parámetro opcional es determinante.

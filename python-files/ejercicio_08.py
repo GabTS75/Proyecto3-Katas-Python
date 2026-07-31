@@ -12,8 +12,8 @@ def dividir_con_manejo(texto_num1, texto_num2):
     """
     Recibe dos valores en texto (tal como llegarían de input()), intenta
     convertirlos a número y dividirlos, y maneja los errores posibles.
-    Se recibe el texto como parámetro (en vez de llamar a input() aquí
-    dentro) para poder probar la función fácilmente con distintos casos.
+    1ro. recibe el texto como parámetro (en vez de llamar a input() aquí
+    dentro) para poder probar la función fácilmente en distintos casos.
     """
     try:
         num1 = float(texto_num1)
@@ -29,7 +29,7 @@ def dividir_con_manejo(texto_num1, texto_num2):
 
 
 if __name__ == "__main__":
-    print("Con datos predefinidos:")
+    print("Con datos para prueba:")
     print("\nEntrada: '5' y '2' (el caso correcto)")
     dividir_con_manejo("5", "2")
 

@@ -5,14 +5,14 @@
 # - Procesa un texto según la opción especificada: contar_palabras,
 #   reemplazar_palabras o eliminar_palabra.
 # - Código a seguir:
-#     1. Crear una función contar_palabras que cuente el número de veces
+#     a. Crear una función contar_palabras que cuente el número de veces
 #        que aparece cada palabra en el texto y devuelva un diccionario.
-#     2. Crear una función reemplazar_palabras para sustituir una
+#     b. Crear una función reemplazar_palabras para sustituir una
 #        palabra_original por una palabra_nueva en el texto y devolver
 #        el texto modificado.
-#     3. Crear una función eliminar_palabra que elimine una palabra del
+#     c. Crear una función eliminar_palabra que elimine una palabra del
 #        texto y devuelva el texto sin ella.
-#     4. Crear la función procesar_texto que reciba un texto, una opción
+#     d. Crear la función procesar_texto que reciba un texto, una opción
 #        ("contar", "reemplazar", "eliminar") y un número variable de
 #        argumentos según la opción elegida.
 # - Caso de uso:

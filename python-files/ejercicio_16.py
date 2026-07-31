@@ -19,7 +19,7 @@ def palabras_mas_largas_que(cadena, n):
 
 if __name__ == "__main__":
     cadena = "Las oportunidades no aparecen, las creas"
-    n = 4
+    n = 4  # longitud establecida
     print("Cadena:", cadena)
     print("n:", n)
     print("Resultado:", palabras_mas_largas_que(cadena, n))
