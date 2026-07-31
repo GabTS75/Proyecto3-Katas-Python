@@ -37,30 +37,32 @@ Tu repositorio tiene que constar, al menos, de los siguientes archivos/carpetas:
 
 Repositorio preparado y listo para la entrega del **Proyecto 3: Katas Python** del Máster _by Antonio Rosales_.
 
-Proyecto con la resolución de **40 ejercicios de programación en Python**, abarcando progresivamente tipos de datos y estructuras, funciones `lambda`/`map`/`filter`/`reduce`, manejo de condicionales y excepciones (incorporadas y personalizadas), recursividad, clases, programación orientada a objetos (POO) y modularización — con un registro detallado del proceso y las dificultades encontradas en `comentarios.md`.
-
-Además, incluí para el proyecto, un **panel de control** `main.py` para ejecutar cualquier ejercicio de forma interactiva, con el objetivo de facilitar la corrección y evaluación.
+El Proyecto contiene la resolución de **40 ejercicios de programación en Python**, abarcando progresivamente tipos de datos y estructuras, funciones `lambda`/`map`/`filter`/`reduce`, manejo de condicionales y excepciones (incorporadas y personalizadas), recursividad, clases, programación orientada a objetos (POO) y modularización, además cuenta con un registro detallado del proceso y las dificultades encontradas en `comentarios.md`.
 
 ```bash
-📂 Proyecto3-Katas-Python   # nombre del repositorio principal
-├── 📂 python-files/        # Carpeta con todos los módulos (ejercicios)
+📂 Proyecto3-Katas-Python   # repositorio principal del proyecto
+├── 📂 python-files/        # carpeta con todos los módulos (ejercicios)
 │   ├── 📄 __init__.py      # archivo que enlaza los módulos (ejercicios) al menú
 │   ├── 📄 ejercicio_01.py
 │   ├── 📄 ejercicio_02.py
 │   ├── 📄 ejercicio_03.py
 │   ├── ...
 │   └── 📄 ejercicio_40.py
-├── comentarios.md          # Interacción progresiva de los pasos seguidos
-├── main.py                 # Panel interactivo para ejecutar los ejercicios
-└── README.md               # Indicaciones del proyecto (este mismo)
+├── comentarios.md          # registro progresivo de los pasos seguidos
+├── main.py                 # panel interactivo para ejecutar los ejercicios
+└── README.md               # indicaciones del proyecto (este mismo)
 ```
+
+Así mismo, para ejecutar cualquier ejercicio de forma interactiva y con el objetivo de facilitar la corrección y evaluación, he considerado incluir un **panel de control** `main.py` (como se muestra en la estructura del proyecto), a continuación siga las indicaciones.
 
 ### Pasos previos para la ejecución correcta
 
-En la carpeta principal del proyecto `Proyecto3-Katas-Python`, abre el terminal de tu Sistema Operativo (Windows o Linux) y desde allí sigue las siguientes indicaciones:
+En la carpeta principal del proyecto `Proyecto3-Katas-Python`, abre el terminal de tu **Sistema Operativo** (Windows o Linux) y desde allí realiza lo siguiente:
+
+#### En Windows 🪟
 
 ```bash
-# En Windows, escribimos en el CMD (terminal) lo siguiente:
+# Escribimos en el CMD (terminal) lo siguiente:
 python --version
 
 # Si no lo tenemos, instalamos Python 3 siguiendo los pasos:
@@ -74,8 +76,10 @@ python main.py
 python python-files/ejercicio_01.py
 ```
 
+#### En Linux 🐧
+
 ```bash
-# En Linux, abrimos el terminal (Ctrl + Alt + T) y escribimos:
+# Abrimos el terminal (Ctrl + Alt + T) y escribimos:
 python --version
 
 # Por lo general viene siempre pre-instalado Python en Linux
@@ -83,8 +87,6 @@ python --version
 # Para ejecutar el script, escribimos:
 python3 main.py
 ```
-
----
 
 > **NOTA:** También es posible ejecutarlo en el mismo **Visual Studio Code**, abriendo un terminal (**CTRL + ñ**) en la carpeta principal del repositorio y ejecutar `python main.py` o `python3 main.py` tal y como se muestra en la siguiente imagen. 👇
 
