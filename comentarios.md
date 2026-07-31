@@ -8,7 +8,7 @@
 
 - [x] Configuración del entorno de desarrollo y estructura del proyecto.
 
-- [x] Creación del panel de control base (main.py).
+- [x] Creación del panel de control base `main.py`.
 
 ### Paso 2: Desarrollo de los ejercicios
 
@@ -25,9 +25,11 @@
 - Uso de `isinstance()`, slicing con índices negativos, `sorted()` para comparar contenido.
 - Listas de diccionarios y excepciones personalizadas algo más elaboradas.
 
-**Bloque 3 (Ejercicios 34-40):** *temas tratados*
+**Bloque 3 (Ejercicios 34-40):** *Programación Orientada a Objetos y función `*args`*
 
-- abc
+- Clases en POO (Arbol y UsuarioBanco)
+- función despachadora con `*args` (argumentos variables), y
+- Condicionales con franjas/rangos.
 
 ### Dificultades encontradas y soluciones
 
@@ -137,7 +139,17 @@ Función que cuenta la frecuencia de letras de una cadena usando un diccionario,
 
 ---
 
-etc. ...
+#### Ejercicio 37
+
+- **Dificultad:** Cuando busco ampliar este ejercicio para que acepte el formato `hh:mm`, un primer intento aplicó `int()` sobre el texto completo antes de separarlo por **':'** `texto = int(input(...))`, dando `ValueError: invalid literal for int() with base 10: '14:10'`, ya que **':'** no es parte de un número entero válido.
+- **Solución:** El texto se mantiene como string y se separa primero con `.split(":")`; solo cada parte por separado (horas, minutos) se convierte a `int()` después de separarlas.
+
+---
+
+#### Ejercicio 40
+
+- **Dificultad:** Cuando pruebo con respuestas inválidas ("quizas", "ss", "nn", "quiza") en distintos casos, el programa se rompía en varios de ellos (traceback), y además escribir "si" (o cualquier cosa) como precio en el bloque interactivo también rompía el programa.
+- **Solución:** Incluyo todos los casos por igual mediante un bucle `for` sobre una lista de "casos de prueba". Además, en el bloque interactivo, modifico el `try/except` para cubrir también la conversión `float()` del precio (que puede fallar con ValueError igual que la validación de "si"/"no").
 
 ---
 
@@ -150,3 +162,5 @@ etc. ...
 - **Máster:** Ciberseguridad — **Prometeo Cyber** *by Antonio Rosales*
 
 - **GitHub:** [GabTS75](https://github.com/GabTS75)
+
+> ✨ « Siempre parece imposible hasta que se consigue » ✨
